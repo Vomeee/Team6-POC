@@ -6,17 +6,17 @@ using UnityEngine;
 public enum TagName { ActStart, CameraTarget }
 public class Info : MonoBehaviour
 {
-    public TagName id;
+    public TagName tag;
     
 
-    public static GameObject FindInChildren(GameObject _go, TagName name) 
+    public static GameObject FindInChildren(GameObject target, TagName name) 
     {
-      var tags=  _go.GetComponentsInChildren<Info>().ToList();
+      var infos =  target.GetComponentsInChildren<Info>().ToList();
 
-        for (int i = 0; i < tags.Count; i++) 
+        for (int i = 0; i < infos.Count; i++) 
         {
-            if(tags[i].id == name)
-                return tags[i].gameObject;
+            if(infos[i].tag == name)
+                return infos[i].gameObject;
         }
 
         return null;

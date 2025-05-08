@@ -1,12 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-    public int scene;
-    
+    public int scene;    
     Button button;
 
 
