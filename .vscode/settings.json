@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Epic-Poc2-Team6.sln"
+    "dotnet.defaultSolution": "Team6-POC.sln"
 }
