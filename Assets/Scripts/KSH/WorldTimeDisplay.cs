@@ -1,19 +1,36 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class WorldTimeDisplay : MonoBehaviour
 {
-    public TextMesh textMesh; 
+     Text _text; 
 
 
     void Start()
     {
-        textMesh = GetComponentInChildren<TextMesh>();
+        _text = GetComponentInChildren<Text>();
     }
 
 
     void FixedUpdate()
     {
         var worldTime = WorldTimer.Instance;
-        textMesh.text = worldTime.GetHour().ToString() + " : " + worldTime.GetMinute().ToString();
+
+
+        int hour = worldTime.GetHour();
+        string hourstring = worldTime.GetHour().ToString();
+        if (hour <10)
+            hourstring= "0" + worldTime.GetHour().ToString();
+
+
+        int minuite = worldTime.GetMinute();
+        string minuitestring = worldTime.GetMinute().ToString();
+        if (minuite < 10)
+            minuitestring = "0" + worldTime.GetMinute().ToString();
+
+
+
+        _text.text = hourstring + " : " + minuitestring;
     }
 }

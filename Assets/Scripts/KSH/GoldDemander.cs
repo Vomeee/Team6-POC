@@ -1,16 +1,18 @@
 using UnityEngine;
 
-public class GoldDemander : MonoBehaviour
+public class GoldDemander : SingletonInherit<GoldDemander>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float goldNow;
+    public float goldDemand;
+
+
+    public bool isFullfillDemand()
     {
-        
+        if (goldNow >= goldDemand) 
+            return true;
+
+        return false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void DeposeGold(float amunt=0) { }
 }
