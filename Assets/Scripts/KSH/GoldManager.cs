@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GoldDemander : SingletonInherit<GoldDemander>
+public class GoldManager : SingletonInherit<GoldManager>
 {
     public float goldNow;
     public float goldDemand;

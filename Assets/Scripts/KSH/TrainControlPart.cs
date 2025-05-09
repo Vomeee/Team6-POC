@@ -8,7 +8,7 @@ public class TrainControlPart : MonoBehaviour
 
     void Start()
     {
-        GoldDemander.Instance.OnFullfill.AddListener(CheckEnter); // 할당량달성시 
+        GoldManager.Instance.OnFullfill.AddListener(CheckEnter); // 할당량달성시 
         GetComponentInParent<TrainStation>().OnArrive.AddListener(CheckEnter);// 달성이후 기차도착 시 
     }
        
@@ -28,7 +28,7 @@ public class TrainControlPart : MonoBehaviour
 
     void CheckEnter()
     {
-        if (GoldDemander.Instance.isFullfillDemand())
+        if (GoldManager.Instance.isFullfillDemand())
             canEnter = true;
         else
             canEnter = false;

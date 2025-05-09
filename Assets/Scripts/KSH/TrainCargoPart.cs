@@ -5,7 +5,7 @@ public class TrainCargoPart : MonoBehaviour
     
 
     
-    void DeposeGold(float amount) { GoldDemander.Instance.DeposeGold(amount); }
+    void DeposeGold(float amount) { GoldManager.Instance.DeposeGold(amount); }
 
 
 

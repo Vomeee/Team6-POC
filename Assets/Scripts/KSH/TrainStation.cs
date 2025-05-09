@@ -28,7 +28,7 @@ public class TrainStation : MonoBehaviour
 
     void FixedUpdate()
     {
-        goldDemand.value = GoldDemander.Instance.goldNow / GoldDemander.Instance.goldDemand;
+        goldDemand.value = GoldManager.Instance.goldNow / GoldManager.Instance.goldDemand;
     }
 
     IEnumerator TrainCycle()

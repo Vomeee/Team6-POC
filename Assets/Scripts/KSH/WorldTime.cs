@@ -27,7 +27,7 @@ public class WorldTime : SingletonInherit<WorldTime>
         //테스트용
         Time.timeScale = test;
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            GoldDemander.Instance.DeposeGold(30);
+            GoldManager.Instance.DeposeGold(30);
         //
     }
     public int GetHour() { return (int)timer / 3600; }
