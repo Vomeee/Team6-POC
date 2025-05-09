@@ -82,7 +82,7 @@ MonoBehaviour:
     TileSets:
     - {fileID: 11400000, guid: 5867a3b713c060e419b7ee3d128262bf, type: 2}
     NodeType: 0
-    Position: 0.96949893
+    Position: 0.96864504
     Label: Boss
     Keys:
     - ID: 2
