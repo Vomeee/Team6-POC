@@ -8,7 +8,11 @@ public class TrainStation : MonoBehaviour
     [Header("Train")]
     public GameObject train;
     [Range(0, 59)] public float stopMinute = 20; //게임시간기준 분단위 
-    float nextArrival = 120; //게임시간 기준 2시간
+    float nextArrival = 120; //게임시간기준 2시간
+    [Space(30)]
+
+
+    [Header("Event")]
     public UnityEvent OnArrive;
     public UnityEvent OnDepart;
     [Space(30)]

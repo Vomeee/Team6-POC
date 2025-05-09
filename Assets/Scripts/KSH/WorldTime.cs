@@ -14,7 +14,6 @@ public class WorldTime : SingletonInherit<WorldTime>
     {
         timer = startHour * 3600;// * timeScaleRealToGame ;
     }
-
     void FixedUpdate()
     {
         timer += Time.fixedDeltaTime * timeScaleRealToGame;
@@ -22,21 +21,23 @@ public class WorldTime : SingletonInherit<WorldTime>
         int minutes = (int)timer / 60 % 60;
 
     }
-     void Update()
+    
+    //테스트용
+    void Update()
     {
-        //테스트용
         Time.timeScale = test;
         if (Input.GetKeyDown(KeyCode.Alpha1))
             GoldManager.Instance.DeposeGold(30);
         //
     }
+
+
     public int GetHour() { return (int)timer / 3600; }
     public int GetMinute() { return (int)timer / 60 % 60; }
 
 
     public int GetMinuteByGameTime(float realSecond) { return (int)(realSecond * timeScaleRealToGame / 60 % 60); }
     public int GetHourByGameTime(float realSecond) { return (int)(realSecond * timeScaleRealToGame / 60 % 60); }
-
 
 
 

@@ -3,7 +3,7 @@ using UnityEngine;
 public class TrainControlPart : MonoBehaviour
 {
     public bool canEnter;//Å¾½Â°¡´É¿©ºÎ
-    public bool isEnter; //Å¾½Â Çß³Ä 
+    public bool isEnter; //Å¾½Â ¿©ºÎ 
 
 
     void Start()

@@ -12,7 +12,9 @@ public class Train : MonoBehaviour
         trainStation.OnArrive.AddListener(Arrive);
         trainStation.OnDepart.AddListener(Depart);
     }
-    //이동관련 
+
+
+    //열차 도착 출발 / 이동관련? 
     void Arrive() { gameObject.SetActive(true); }
     void Depart() { gameObject.SetActive(false); }
 }
