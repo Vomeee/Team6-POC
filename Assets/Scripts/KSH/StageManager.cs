@@ -2,15 +2,7 @@ using UnityEngine;
 
 public class StageManager : SingletonInherit<StageManager>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int stageNow;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
