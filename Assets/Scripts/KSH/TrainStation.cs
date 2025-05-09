@@ -7,8 +7,8 @@ public class TrainStation : MonoBehaviour
 {
     [Header("Train")]
     public GameObject train;
-    public float stopTime = 30;
-    public float nextArrival = 180;
+    [Range(0, 59)] public float stopMinute = 20; //게임시간기준 분단위 
+    float nextArrival = 120; //게임시간 기준 2시간
     public UnityEvent OnArrive;
     public UnityEvent OnDepart;
     [Space(30)]
@@ -19,8 +19,6 @@ public class TrainStation : MonoBehaviour
     public Text trainNextArriveTime;
     public Slider goldDemand;
 
-    public float test = 10;
-
 
     void Start()
     {
@@ -30,7 +28,6 @@ public class TrainStation : MonoBehaviour
 
     void FixedUpdate()
     {
-        Time.timeScale = test;
         goldDemand.value = GoldDemander.Instance.goldNow / GoldDemander.Instance.goldDemand;
     }
 
@@ -39,23 +36,23 @@ public class TrainStation : MonoBehaviour
         var worldTime = WorldTime.Instance;
 
 
-        //열차 출발 UI 
-        trainDepartTime.text = worldTime.GetHourDisplay() + " : " + worldTime.GetMinuteByGameTime(stopTime);
+        //UI 열차출발시간
+        trainDepartTime.text = worldTime.GetHourDisplay() + " : " + stopMinute.ToString();
 
 
-        //열차 도착 UI 
-        trainNextArriveTime.text = worldTime.FloatToTimerUI(worldTime.GetHour() + 2) + " : " + "00";
+        //UI 다음도착시간 
+        float timer = nextArrival * 60 ; 
+        trainNextArriveTime.text = worldTime.GetHour() + (int)timer / 3600 + " : " + worldTime.FloatToTimerUI( (int)timer / 60 % 60);
 
-
+                
         //정차시간 이후 출발 
-        Invoke(nameof(TrainDepart), stopTime);
+        Invoke(nameof(TrainDepart), stopMinute * 60 / worldTime.timeScaleRealToGame);
 
 
         //다음기차 기다림 
-        yield return new WaitForSeconds(nextArrival);
+        yield return new WaitForSeconds(nextArrival  *  60 / worldTime.timeScaleRealToGame);
 
-
-        //2회차부터 도착
+        //2회차부터 도착이벤트
         OnArrive.Invoke();
 
 
@@ -64,15 +61,14 @@ public class TrainStation : MonoBehaviour
     }
     void TrainDepart() { OnDepart.Invoke(); }
 }
-
 /*
-
+1초 40초  
+1초 20초 
+현실시간 - 3분마다 30초정차  
 게임시간 - 2시마다 20분정차 
-현실시간 - 3분마다 30초정차 
+
  
 0 -^--- 2 -^--- 4 -^--- 6
-
-
 
 
 

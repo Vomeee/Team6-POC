@@ -3,9 +3,11 @@ using UnityEngine;
 public class WorldTime : SingletonInherit<WorldTime>
 {
     [Header("Variable")]
-    public float timeScaleRealToGame= 40; //2시간7200초 3분180초 
     public float timer = 0f;
+    public float timeScaleRealToGame= 40; // 3초 120초 
     public float startHour=9;
+
+    public float test = 10;
 
 
     void Start()
@@ -18,13 +20,22 @@ public class WorldTime : SingletonInherit<WorldTime>
         timer += Time.fixedDeltaTime * timeScaleRealToGame;
         int hour = (int)timer / 3600;
         int minutes = (int)timer / 60 % 60;
-    }
 
+    }
+     void Update()
+    {
+        //테스트용
+        Time.timeScale = test;
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            GoldDemander.Instance.DeposeGold(30);
+        //
+    }
     public int GetHour() { return (int)timer / 3600; }
     public int GetMinute() { return (int)timer / 60 % 60; }
 
 
     public int GetMinuteByGameTime(float realSecond) { return (int)(realSecond * timeScaleRealToGame / 60 % 60); }
+    public int GetHourByGameTime(float realSecond) { return (int)(realSecond * timeScaleRealToGame / 60 % 60); }
 
 
 

@@ -908,6 +908,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5265e5dfd4b6774d87edb8623de4718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canEnter: 0
+  isEnter: 0
 --- !u!1 &613860262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,8 +1215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   train: {fileID: 1228957166}
-  stopTime: 30
-  nextArrival: 180
+  stopMinute: 20
   OnArrive:
     m_PersistentCalls:
       m_Calls: []
@@ -1224,7 +1225,6 @@ MonoBehaviour:
   trainDepartTime: {fileID: 144626617}
   trainNextArriveTime: {fileID: 2104065254}
   goldDemand: {fileID: 951881181}
-  test: 10
 --- !u!1 &786099879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,9 +1329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c437cf7082c0c12478c7ce45f8f2e520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScaleRealToGame: 40
   timer: 0
+  timeScaleRealToGame: 40
   startHour: 9
+  test: 30
 --- !u!4 &829715019
 Transform:
   m_ObjectHideFlags: 0
@@ -2470,8 +2471,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb4751e82201b14ba6a1dbd558b5b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldNow: 30
+  goldNow: 0
   goldDemand: 100
+  OnDepose:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFullfill:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2023055448
 Transform:
   m_ObjectHideFlags: 0
@@ -2650,6 +2657,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 168058639}
-  - {fileID: 2023055448}
   - {fileID: 829715019}
+  - {fileID: 2023055448}
   - {fileID: 776156049}
