@@ -28,14 +28,20 @@ public class Gacha : MonoBehaviour
 
         while (true)
         {
-            // 이전에 켜졌던 오브젝트 끄기
-            if (previousIndex >= 0)
+            // 이전 오브젝트 끄기
+            if (previousIndex >= 0 && products[previousIndex].activeSelf)
             {
                 products[previousIndex].SetActive(false);
             }
 
-            // 랜덤으로 새 오브젝트 선택
-            int i = Random.Range(0, products.Length);
+            // 이전과 다른 인덱스 선택
+            int i;
+            do
+            {
+                i = Random.Range(0, products.Length);
+            } while (i == previousIndex);
+
+            // 새 오브젝트 켜기
             products[i].SetActive(true);
             previousIndex = i;
 
