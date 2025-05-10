@@ -16,7 +16,9 @@ public class TrainControlPart : MonoBehaviour
 
     public void EnterTrain() 
     { 
-        isEnter = true;
+        if(canEnter)
+            isEnter = true;
+
 
         //케릭터 이동?
     }

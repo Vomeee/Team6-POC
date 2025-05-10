@@ -14,7 +14,7 @@ public class SingletonInherit<T> : MonoBehaviour where T : MonoBehaviour
 
     private void Awake()
     {
-        var t = FindObjectsOfType<T>(); Debug.Log(t.Length);
+        var t = FindObjectsOfType<T>();
         if (t.Length == 1)
             isFirst = true;
 

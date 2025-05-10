@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class GoldManager : SingletonInherit<GoldManager>
 {
     [Header("Variable")]

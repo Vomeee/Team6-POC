@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   donDestroy: 0
   timer: 0
-  timeScaleRealToGame: 20
+  timeScaleRealToGame: 40
   startHour: 9
   test: 30

@@ -79,3 +79,11 @@ public class WorldTime : SingletonInherit<WorldTime>
     }
 }
 
+
+/*
+스테이지->상점->다음스테이지     scene or 좌표이동
+열차 출발 도착 시 이동관련 / 방위주 실내맵에서 / 단순연출 페이드인아웃
+철문 바닥 천장 / 점멸류  
+
+
+ */
