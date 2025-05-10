@@ -48,13 +48,21 @@ public class TrainStation : MonoBehaviour
         float timer = nextArrival * 60 ; 
         trainNextArriveTime.text = worldTime.GetHour() + (int)timer / 3600 + " : " + worldTime.FloatToTimerUI( (int)timer / 60 % 60);
 
-                
+
         //정차시간 이후 출발 
-        Invoke(nameof(TrainDepart), stopMinute * 60 / worldTime.timeScaleRealToGame);
+        StartCoroutine(TrainDepartTimer());
 
 
         //다음기차 기다림 
-        yield return new WaitForSeconds(nextArrival  *  60 / worldTime.timeScaleRealToGame);
+        var hour = worldTime.GetHour() + 2;
+        for (; ; )
+        {
+            if(worldTime.GetHour() == hour)
+                break;
+
+            yield return new WaitForSeconds(1);
+        }
+
 
         //2회차부터 도착이벤트
         OnArrive.Invoke();
@@ -63,7 +71,18 @@ public class TrainStation : MonoBehaviour
         //무한반복
         StartCoroutine(TrainCycle());
     }
-    void TrainDepart() { OnDepart.Invoke(); }
+    IEnumerator TrainDepartTimer()
+    {
+        for (; ; )
+        {
+            if (WorldTime.Instance.GetMinute() == stopMinute)
+                break;
+
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        OnDepart.Invoke();
+    }
 }
 /*
 1초 40초  
@@ -76,5 +95,7 @@ public class TrainStation : MonoBehaviour
 
 
 
+        //Invoke(nameof(TrainDepart), stopMinute * 60 / worldTime.timeScaleRealToGame);
+        // yield return new WaitForSeconds(nextArrival * 60 / worldTime.timeScaleRealToGame);
  Debug.Log(WorldTime.Instance.GetMinute());
  */

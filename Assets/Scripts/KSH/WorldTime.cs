@@ -8,8 +8,9 @@ public class WorldTime : SingletonInherit<WorldTime>
     public float timeScaleRealToGame= 40; // 3초 120초 
     public float startHour=9;
 
+    //테스트
     public float test = 10;
-
+    float testTime;
 
     void Start()
     {
@@ -20,7 +21,6 @@ public class WorldTime : SingletonInherit<WorldTime>
         timer += Time.fixedDeltaTime * timeScaleRealToGame;
         int hour = (int)timer / 3600;
         int minutes = (int)timer / 60 % 60;
-
     }
     
     //테스트용
@@ -33,6 +33,8 @@ public class WorldTime : SingletonInherit<WorldTime>
         if (Input.GetKeyDown(KeyCode.R))
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+        testTime += Time.deltaTime;
+        Debug.Log((int)testTime);
         //
     }
 
