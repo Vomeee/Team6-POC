@@ -48,4 +48,4 @@ MonoBehaviour:
   timer: 0
   timeScaleRealToGame: 40
   startHour: 9
-  test: 30
+  test: 1
