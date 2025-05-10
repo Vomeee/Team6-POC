@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.Events;
 
 
@@ -24,14 +24,14 @@ public class GoldManager : SingletonInherit<GoldManager>
     }
 
 
-    //»óÁ¡±¸¸Å 
+    //ìƒì êµ¬ë§¤ 
     public void UseGold(float amunt=0)
     {
         goldNow -= amunt;
         OnUse.Invoke();
     }
     
-    //±âÂ÷¿¡¼­ ³Ö±â 
+    //ê¸°ì°¨ì—ì„œ ë„£ê¸° 
     public void DeposeGold(float amunt=0) 
     {
         goldNow += amunt;
