@@ -28,14 +28,11 @@ public class Interaction_Detector : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, _rayDistance, _InteractionLayerMask))
         {
-            Interaction(hit.collider.gameObject);
-
-
-
             _InteractUi.SetActive(true);
+
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
+                Interaction(hit.collider.gameObject);
             }
         }
         else
@@ -48,7 +45,7 @@ public class Interaction_Detector : MonoBehaviour
 
     void Interaction(GameObject item)
     {
-        //item.GetComponent<interaction>().interact;
+        
         
         
     }
