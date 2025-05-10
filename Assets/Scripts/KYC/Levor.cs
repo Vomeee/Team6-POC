@@ -3,8 +3,20 @@ using System.Collections;
 
 public class Lever : MonoBehaviour
 {
+    public GameObject[] spawnPrefabs; // 소환할 프리팹 배열
+    private Transform spawnPoint;     // SpawnPoint 위치 캐싱
     private bool _isRotating = false;
 
+
+    private void Start()
+    {
+        // 자식 중 "SpawnPoint"라는 이름을 가진 오브젝트 찾기
+        spawnPoint = transform.Find("SpawnPoint");
+        if (spawnPoint == null)
+        {
+            Debug.LogError("SpawnPoint를 찾을 수 없습니다.");
+        }
+    }
     private void OnEnable()
     {
         TemporaryFirstPersonController.OnLevorHit += HandleLevorHit;
@@ -21,6 +33,13 @@ public class Lever : MonoBehaviour
         {
             Debug.Log("레버가 클릭되었습니다!");
             StartCoroutine(RotateLeverSmoothly());
+
+            // 프리팹 소환
+            if (spawnPrefabs.Length > 0 && spawnPoint != null)
+            {
+                int index = Random.Range(0, spawnPrefabs.Length);
+                Instantiate(spawnPrefabs[index], spawnPoint.position, spawnPoint.rotation);
+            }
         }
     }
 
