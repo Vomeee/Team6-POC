@@ -22,6 +22,7 @@ public class TrainStation : MonoBehaviour
     public Text trainDepartTime;
     public Text trainNextArriveTime;
     public Slider goldDemand;
+    public Text goldDemandText;
 
 
     void Start()
@@ -32,7 +33,8 @@ public class TrainStation : MonoBehaviour
 
     void FixedUpdate()
     {
-        goldDemand.value = GoldManager.Instance.goldNow / GoldManager.Instance.goldDemand;
+        goldDemandText.text = GoldManager.Instance.goldPutin + " / " + GoldManager.Instance.goldDemand;
+        goldDemand.value = GoldManager.Instance.goldPutin / GoldManager.Instance.goldDemand;
     }
 
     IEnumerator TrainCycle()

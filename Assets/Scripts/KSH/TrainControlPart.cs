@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class TrainControlPart : MonoBehaviour
+public class TrainControlPart : MonoBehaviour, IInteractable
 {
     public bool canEnter;//탑승가능여부
     public bool isEnter; //탑승 여부 
@@ -19,11 +20,15 @@ public class TrainControlPart : MonoBehaviour
         //케릭터 이동?
         /*특정위치 고정 */
     }
-
     void CheckEnter()
     {
         canEnter = true;
         door.active = true;
+    }
+
+    public void Interact(GameObject interactor, float value = 0)
+    {
+        StageManager.Instance.GoShop();
     }
 }
 

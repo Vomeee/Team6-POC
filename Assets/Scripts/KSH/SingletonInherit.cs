@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SingletonInherit<T> : MonoBehaviour where T : MonoBehaviour
 {
     [Header("Singleton")]
-    public bool donDestroy;
+
+
+    public bool dontDestroy;
     bool isFirst;
 
     [Space(30)]
@@ -24,8 +27,11 @@ public class SingletonInherit<T> : MonoBehaviour where T : MonoBehaviour
         {
             Instance = FindAnyObjectByType<T>();
 
-            if (donDestroy)
+            if (dontDestroy)
+            {
+                transform.parent = null;
                 DontDestroyOnLoad(this);
+            }
         }
         else
         {

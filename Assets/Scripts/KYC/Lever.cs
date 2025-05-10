@@ -21,7 +21,7 @@ public class Lever : MonoBehaviour, IInteractable
 
     public void Interact(GameObject interactor, float value)
     {
-        if(GoldManager.Instance.goldNow >= 50)
+        if(GoldManager.Instance.goldMy >= 50)
         {
             GoldManager.Instance.UseGold(50);
             HandleLevorHit(interactor);
