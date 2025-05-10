@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4322935215193396605
+--- !u!114 &-6479142487090703525
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   sharpenIntensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 4
   sharpenDepthThreshold:
     m_OverrideState: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   tonemap:
-    m_OverrideState: 0
-    m_Value: 2
+    m_OverrideState: 1
+    m_Value: 0
   tonemapAGXGamma:
     m_OverrideState: 0
     m_Value: 2.5
@@ -115,13 +115,13 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   saturate:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   brightness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1.05
   contrast:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1.02
   daltonize:
     m_OverrideState: 0
@@ -142,14 +142,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   lutIntensity:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   lutTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
     dimension: 1
   bloomIntensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.25
   bloomThreshold:
     m_OverrideState: 1
@@ -184,8 +184,8 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 0
   bloomAntiflicker:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   bloomResolution:
     m_OverrideState: 0
     m_Value: 1
@@ -436,10 +436,10 @@ MonoBehaviour:
     m_Value: 0
   depthOfField:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
   depthOfFieldFocusMode:
-    m_OverrideState: 1
-    m_Value: 2
+    m_OverrideState: 0
+    m_Value: 0
   depthOfFieldAutofocusMinDistance:
     m_OverrideState: 0
     m_Value: 0
@@ -470,8 +470,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   depthOfFieldFocalLength:
-    m_OverrideState: 1
-    m_Value: 0.27
+    m_OverrideState: 0
+    m_Value: 0.05
   depthOfFieldAperture:
     m_OverrideState: 0
     m_Value: 2.8
@@ -510,35 +510,35 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   depthOfFieldForegroundBlur:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   depthOfFieldForegroundBlurHQ:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   depthOfFieldForegroundBlurHQSpread:
-    m_OverrideState: 1
-    m_Value: 12
+    m_OverrideState: 0
+    m_Value: 4
   depthOfFieldForegroundDistance:
     m_OverrideState: 0
     m_Value: 0.25
   depthOfFieldBokeh:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   depthOfFieldBokehComposition:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   depthOfFieldBokehThreshold:
-    m_OverrideState: 1
-    m_Value: 0.7
+    m_OverrideState: 0
+    m_Value: 1
   depthOfFieldBokehIntensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 2
   depthOfFieldDownsampling:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 2
   depthOfFieldMaxSamples:
-    m_OverrideState: 1
-    m_Value: 8
+    m_OverrideState: 0
+    m_Value: 6
   depthOfFieldMaxBrightness:
     m_OverrideState: 0
     m_Value: 1000
@@ -589,10 +589,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.15
   vignettingOuterRing:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.325
   vignettingInnerRing:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.925
   vignettingFade:
     m_OverrideState: 0
@@ -623,13 +623,13 @@ MonoBehaviour:
     m_Value: {fileID: 0}
     dimension: 1
   outline:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   outlineColor:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 0.8}
   outlineTechnique:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   outlineMinSeparation:
     m_OverrideState: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
     m_Value: 0.2
   outlineMinDepthThreshold:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.0005
   outlineSaturationDiffThreshold:
     m_OverrideState: 0
     m_Value: 0.015
@@ -697,14 +697,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 9
   ditherIntensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.005
   frame:
     m_OverrideState: 0
     m_Value: 0
   frameStyle:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   frameBandHorizontalSize:
     m_OverrideState: 0
     m_Value: 0
@@ -743,6 +743,28 @@ MonoBehaviour:
   blurSourceEdgeBlendStrength:
     m_OverrideState: 0
     m_Value: 20
+--- !u!114 &-4265098813857866716
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  gamma:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  gain:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,7 +775,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Demo DoF Profile
+  m_Name: PostFX Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: -4322935215193396605}
+  - {fileID: -6479142487090703525}
+  - {fileID: -4265098813857866716}
