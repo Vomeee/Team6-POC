@@ -1,8 +1,14 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
-public class TrainCargoPart : MonoBehaviour
-{    
-    //ÇÃ·¹ÀÌ¾îÀÇ ¾ÆÀÌÅÛ°¡Ä¡°è»ê + ¿Ã·Á³õ±â
-    public  void DeposeGold(float amount) { GoldManager.Instance.DeposeGold(amount); }
- 
+public class TrainCargoPart : MonoBehaviour, IInteractable
+{
+    //í”Œë ˆì´ì–´ì˜ ì•„ì´í…œê°€ì¹˜ê³„ì‚° + ì˜¬ë ¤ë†“ê¸°
+    public void DeposeGold(float amount) { GoldManager.Instance.DeposeGold(amount); }
+
+    public void Interact(GameObject interactor, float value)
+    {
+        value = 50;
+        GoldManager.Instance.DeposeGold(value);
+    }
+
 }

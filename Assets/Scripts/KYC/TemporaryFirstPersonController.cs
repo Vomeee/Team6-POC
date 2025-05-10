@@ -4,7 +4,7 @@ using UnityEngine;
 public class TemporaryFirstPersonController : MonoBehaviour
 {
 
-    public static Action<GameObject> OnLevorHit;
+    //public static Action<GameObject> OnLevorHit;
 
     [Header("Movement Settings")]
     [SerializeField] private float _moveSpeed = 5f;
@@ -60,7 +60,7 @@ public class TemporaryFirstPersonController : MonoBehaviour
                 {
                     Debug.DrawLine(hit.point, hit.point + Vector3.up * 0.1f, Color.green, 1f);
                     Debug.Log("Levor object in range!");
-                    OnLevorHit?.Invoke(hit.collider.gameObject);
+                    //OnLevorHit?.Invoke(hit.collider.gameObject);
                     // 여기에 추가 액션(ex. UI 알림 등)을 구현 가능
                 }
             }
