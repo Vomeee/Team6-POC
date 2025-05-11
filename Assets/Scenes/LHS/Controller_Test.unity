@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 204901807}
   - component: {fileID: 204901806}
   - component: {fileID: 204901810}
-  m_Layer: 25
+  m_Layer: 10
   m_Name: Trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,6 +1263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1231251221697160677, guid: d7e492b2842dc7848950ca08a8be4d03, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2055676557958905583, guid: d7e492b2842dc7848950ca08a8be4d03, type: 3}
       propertyPath: m_Name
       value: Player
