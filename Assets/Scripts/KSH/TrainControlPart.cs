@@ -10,6 +10,7 @@ public class TrainControlPart : MonoBehaviour, IInteractable
     void Start()
     {
         GoldManager.Instance.OnFullfill.AddListener(CheckEnter); // 할당량달성시  비활성되도 호출됨
+        gameObject.active = false;
     }
             
     public void EnterTrain() 
