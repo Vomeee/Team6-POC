@@ -1,44 +1,48 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.Events;
 
 
 public class GoldManager : SingletonInherit<GoldManager>
 {
     [Header("Variable")]
-    public float goldNow;
+    public float goldPutin;
     public float goldDemand;
+    public float goldMy;
     [Space(30)]
 
+
     [Header("Event")]
-    public UnityEvent OnDepose;
+    public UnityEvent OnPutin;
     public UnityEvent OnUse;
     public UnityEvent OnFullfill;
 
 
-    public bool isFullfillDemand()
-    {
-        if (goldNow >= goldDemand) 
-            return true;
-
-        return false;
-    }
 
 
-    //»óÁ¡±¸¸Å 
+
+
+    //ìƒì êµ¬ë§¤ 
     public void UseGold(float amunt=0)
     {
-        goldNow -= amunt;
+        goldMy -= amunt;
         OnUse.Invoke();
     }
     
-    //±âÂ÷¿¡¼­ ³Ö±â 
-    public void DeposeGold(float amunt=0) 
+    //ê¸°ì°¨ì—ì„œ ë„£ê¸° 
+    public void PutinGold(float amunt=0) 
     {
-        goldNow += amunt;
+        goldPutin += amunt;
 
-        OnDepose.Invoke();
+        OnPutin.Invoke();
 
         if (isFullfillDemand())
             OnFullfill.Invoke();
+    }
+     bool isFullfillDemand()
+    {
+        if (goldPutin >= goldDemand) 
+            return true;
+
+        return false;
     }
 }

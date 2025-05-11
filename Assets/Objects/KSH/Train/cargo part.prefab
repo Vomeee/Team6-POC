@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 573818998353354281}
-  - component: {fileID: 3499165574909906019}
   m_Layer: 0
   m_Name: cargo part
   m_TagString: Untagged
@@ -33,18 +32,6 @@ Transform:
   - {fileID: 3827716592262596218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3499165574909906019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3008115973819383680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d381a4517f34cb459c22f29812e9181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3827716592262306384
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +392,8 @@ GameObject:
   - component: {fileID: 3827716592261269082}
   - component: {fileID: 3827716592260301978}
   - component: {fileID: 5226174144936582447}
-  m_Layer: 0
+  - component: {fileID: 4208076597513487750}
+  m_Layer: 10
   m_Name: train-wagon-hopper-base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,6 +492,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 478b73833d6be0d42b87ec81f224a80e, type: 3}
+--- !u!114 &4208076597513487750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827716592262306392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d381a4517f34cb459c22f29812e9181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3827716592262306394
 GameObject:
   m_ObjectHideFlags: 0

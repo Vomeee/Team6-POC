@@ -28,13 +28,13 @@ public class WorldTime : SingletonInherit<WorldTime>
     {
         Time.timeScale = test;
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            GoldManager.Instance.DeposeGold(30);
+            GoldManager.Instance.PutinGold(30);
 
         if (Input.GetKeyDown(KeyCode.R))
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
         testTime += Time.deltaTime;
-        Debug.Log((int)testTime);
+        //Debug.Log((int)testTime);
         //
     }
 

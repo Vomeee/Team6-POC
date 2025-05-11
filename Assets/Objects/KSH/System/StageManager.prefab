@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0840af80d50bff94fb017e437656aa5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  donDestroy: 1
-  stageNow: 0
+  dontDestroy: 1
+  stageNow: 1

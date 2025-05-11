@@ -26,6 +26,7 @@ public class Train : MonoBehaviour
     //열차 도착 출발 / 이동관련? 
     void Arrive()
     {
+        gameObject.active = true;
         StopAllCoroutines();
         StartCoroutine(C_Arrive());
     }
@@ -59,6 +60,7 @@ public class Train : MonoBehaviour
             {
                 velocityNow = 0;
                 transform.position = trainStation.transform.position - transform.forward * distanceMax;
+                gameObject.active = false;
                 break;
             }
         }
@@ -69,6 +71,7 @@ public class Train : MonoBehaviour
         velocityNow = velocityMax;
         var originPos = trainStation.transform.position - transform.forward * distanceMax;
         var stopDistance = 5.0f;
+
 
         for (;;)
         {

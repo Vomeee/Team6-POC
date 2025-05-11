@@ -44,10 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb4751e82201b14ba6a1dbd558b5b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  donDestroy: 1
-  goldNow: 0
+  dontDestroy: 1
+  goldPutin: 0
   goldDemand: 100
-  OnDepose:
+  goldMy: 0
+  OnPutin:
     m_PersistentCalls:
       m_Calls: []
   OnUse:
