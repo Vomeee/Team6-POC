@@ -34,16 +34,16 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   compareStyle:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   comparePanning:
-    m_OverrideState: 0
-    m_Value: 0.25
+    m_OverrideState: 1
+    m_Value: 0.253
   compareLineAngle:
-    m_OverrideState: 0
-    m_Value: 1.4
+    m_OverrideState: 1
+    m_Value: 1.52
   compareLineWidth:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.002
   flipY:
     m_OverrideState: 1
@@ -77,7 +77,7 @@ MonoBehaviour:
     m_Value: 0
   sharpenIntensity:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 3.4
   sharpenDepthThreshold:
     m_OverrideState: 0
     m_Value: 0.035
@@ -102,11 +102,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.5
   antialiasStrength:
-    m_OverrideState: 0
-    m_Value: 5
+    m_OverrideState: 1
+    m_Value: 3.8
   antialiasDepthThreshold:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.000064
   antialiasSpread:
     m_OverrideState: 0
     m_Value: 3
@@ -114,7 +114,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   tonemap:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   tonemapAGXGamma:
     m_OverrideState: 0
@@ -130,19 +130,19 @@ MonoBehaviour:
     m_Value: 1
   saturate:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.47
   brightness:
-    m_OverrideState: 0
-    m_Value: 1.05
+    m_OverrideState: 1
+    m_Value: 0.86
   contrast:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.942
   daltonize:
     m_OverrideState: 0
     m_Value: 0
   sepia:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   tintColor:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 0}
@@ -164,19 +164,19 @@ MonoBehaviour:
     dimension: 1
   bloomIntensity:
     m_OverrideState: 1
-    m_Value: 0.35
+    m_Value: 3.05
   bloomThreshold:
-    m_OverrideState: 0
-    m_Value: 0.75
+    m_OverrideState: 1
+    m_Value: 1.47
   bloomConservativeThreshold:
     m_OverrideState: 0
     m_Value: 0
   bloomSpread:
-    m_OverrideState: 0
-    m_Value: 0.5
+    m_OverrideState: 1
+    m_Value: 0.615
   bloomMaxBrightness:
     m_OverrideState: 0
-    m_Value: 1000
+    m_Value: 1000.12
   bloomTint:
     m_OverrideState: 0
     m_Value: {r: 0.5, g: 0.5, b: 1, a: 0}
@@ -204,8 +204,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   bloomQuickerBlur:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   bloomCustomize:
     m_OverrideState: 0
     m_Value: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   anamorphicFlaresIntensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.1
   anamorphicFlaresThreshold:
     m_OverrideState: 0
     m_Value: 0.75
@@ -424,11 +424,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.01
   lensDirtIntensity:
-    m_OverrideState: 1
-    m_Value: 2
+    m_OverrideState: 0
+    m_Value: 2.11
   lensDirtThreshold:
     m_OverrideState: 0
-    m_Value: 0.5
+    m_Value: 0.532
   lensDirtTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -437,11 +437,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 3
   chromaticAberrationIntensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.0115
   chromaticAberrationShift:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: -0.29
   chromaticAberrationSmoothing:
     m_OverrideState: 0
     m_Value: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_Value: 1
   eyeAdaptation:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   eyeAdaptationMinExposure:
     m_OverrideState: 0
     m_Value: 0.2
@@ -594,20 +594,20 @@ MonoBehaviour:
     m_Value: {fileID: 0}
     dimension: 1
   purkinje:
-    m_OverrideState: 0
-    m_Value: 0
-  purkinjeAmount:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
+  purkinjeAmount:
+    m_OverrideState: 1
+    m_Value: 0.49
   purkinjeLuminanceThreshold:
     m_OverrideState: 0
-    m_Value: 0.15
+    m_Value: 0.727
   vignettingOuterRing:
     m_OverrideState: 1
-    m_Value: 0.454
+    m_Value: 0.63
   vignettingInnerRing:
     m_OverrideState: 1
-    m_Value: 0.925
+    m_Value: 0.829
   vignettingFade:
     m_OverrideState: 0
     m_Value: 0
@@ -686,6 +686,9 @@ MonoBehaviour:
   outlineUsesOptimizedShader:
     m_OverrideState: 0
     m_Value: 0
+  outlineLayerCutOff:
+    m_OverrideState: 0
+    m_Value: 0
   nightVision:
     m_OverrideState: 0
     m_Value: 0
@@ -708,7 +711,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 9
   ditherIntensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.005
   frame:
     m_OverrideState: 0
