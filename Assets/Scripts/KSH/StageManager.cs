@@ -24,6 +24,6 @@ public class StageManager : SingletonInherit<StageManager>
         stageNow++;
 
         //ÀÎ°×À¸·Î 
-        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
