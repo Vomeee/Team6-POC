@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accel: 3
-  velocityMax: 10
-  distanceMax: 100
+  velocityMax: 30
+  distanceMax: 50
   velocityNow: 0
 --- !u!1001 &1500731701403256430
 PrefabInstance:
