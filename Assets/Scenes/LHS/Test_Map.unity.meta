@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b158e046c21e2294d9a28c841e49b2b4
+labels:
+- map
+- random
+- boss
+- labyrinth
+- generator
+- maze
+- dungeoncrawler
+- roguelike
+- rogue
+- dungen
+- tile
+- room
+- layout
+- dungeon
+- proceduralgeneration
+- generation
+- procedural
+DefaultImporter:
+  userData: 

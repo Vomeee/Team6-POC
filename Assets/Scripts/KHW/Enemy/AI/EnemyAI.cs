@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
@@ -10,7 +10,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
-
+        agent.updateRotation = true;
         if (!agent.isOnNavMesh)
         {
             Debug.LogWarning("❌ 적이 NavMesh 위에 생성되지 않았습니다!");
