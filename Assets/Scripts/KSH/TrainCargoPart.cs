@@ -7,8 +7,11 @@ public class TrainCargoPart : MonoBehaviour, IInteractable
 
     public void Interact(GameObject interactor, float value)
     {
-        value = 30;
+        value = FindFirstObjectByType<CanvasManager>()._slider.value;
+
         GoldManager.Instance.PutinGold(value);
+
+        FindFirstObjectByType<CanvasManager>()._slider.value = 0;
     }
 
 }
