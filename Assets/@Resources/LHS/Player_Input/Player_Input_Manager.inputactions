@@ -45,9 +45,9 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "93d26ed5-4740-48fb-9572-b809482de450",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 },
                 {
