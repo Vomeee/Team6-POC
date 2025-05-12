@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
     public Transform target;
     private NavMeshAgent agent;
+    public GameObject jumpScare;
 
     void Start()
     {
@@ -32,6 +34,22 @@ public class EnemyAI : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            jumpScare.SetActive(true);
+            StartCoroutine(ExitGame());
+        }
+        
+    }
+
+    IEnumerator ExitGame()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Application.Quit();
     }
 
 }
