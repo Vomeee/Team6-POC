@@ -3555,6 +3555,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5559226973342319765, guid: c249fe6e71cc3364bb0b4fd1c0bbefe1, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559226973342319765, guid: c249fe6e71cc3364bb0b4fd1c0bbefe1, type: 3}
+      propertyPath: m_Size.y
+      value: 12.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559226973342319765, guid: c249fe6e71cc3364bb0b4fd1c0bbefe1, type: 3}
+      propertyPath: m_Size.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559226973342319765, guid: c249fe6e71cc3364bb0b4fd1c0bbefe1, type: 3}
+      propertyPath: m_Center.y
+      value: 6.09
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3584,6 +3600,26 @@ PrefabInstance:
     - target: {fileID: 1950443497582553716, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
       propertyPath: m_Name
       value: TrainStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909190492346706963, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909190492346706963, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252918469039857216, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252918469039857216, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252918469039857216, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5160804456962566651, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
       propertyPath: m_LocalScale.x
@@ -3636,6 +3672,26 @@ PrefabInstance:
     - target: {fileID: 5160804456962566651, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228381336909251794, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.50502
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228381336909251794, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.50502
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228381336909251794, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.50502
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228381336909251794, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228381336909251794, guid: 7d33f63133ef36d46bc71825126e195c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

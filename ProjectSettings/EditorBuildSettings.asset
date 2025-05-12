@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Universal/MainScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/LHS/Test_Map.unity
+    guid: b158e046c21e2294d9a28c841e49b2b4
   - enabled: 1
     path: Assets/Scenes/KYC/ShopSystem_KYC.unity
     guid: 63527fc89a30e144191fe5928633cbc4
