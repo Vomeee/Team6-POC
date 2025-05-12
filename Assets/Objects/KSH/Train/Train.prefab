@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accel: 3
-  velocityMax: 10
+  velocityMax: 30
   distanceMax: 100
   velocityNow: 0
 --- !u!1001 &1500731701403256430

@@ -68,9 +68,9 @@ public class Train : MonoBehaviour
     IEnumerator C_Arrive()
     {
         var delta = Time.deltaTime;
-        velocityNow = velocityMax;
         var originPos = trainStation.transform.position - transform.forward * distanceMax;
-        var stopDistance = 5.0f;
+        var stopDistance = 10.0f;
+        velocityNow = velocityMax;
 
 
         for (;;)
