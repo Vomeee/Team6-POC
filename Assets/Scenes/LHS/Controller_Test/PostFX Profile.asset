@@ -166,7 +166,7 @@ MonoBehaviour:
     m_Value: 0
   brightness:
     m_OverrideState: 1
-    m_Value: 1.05
+    m_Value: 1.2
   contrast:
     m_OverrideState: 1
     m_Value: 1.02
